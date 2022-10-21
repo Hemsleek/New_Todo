@@ -1,0 +1,55 @@
+.TodoApp {
+  width: 40vw;
+  margin: 1rem auto 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.TodoApp .title {
+  text-align: center;
+}
+
+.TodoApp main {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+.TodoApp .form-add input {
+  width: 100%;
+  border: 1px solid rgba(123, 123, 123, 0.5);
+  border-radius: 2px;
+  padding: 0 0.2rem;
+  font-size: 11px;
+}
+form input:focus {
+  outline: none;
+}
+
+.Todos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.Todos .form-group {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  border-bottom: 1px solid rgba(123, 123, 123, 0.3);
+  color: rgba(123, 123, 123, 1);
+  padding: 0.3rem 0;
+}
+
+.Footer {
+    display:flex;
+    align-items: center;
+    border-top:1px solid rgba(123, 123, 123, 0.3);
+    padding:0.5rem 1rem;
+}
+.Footer .todo-info{
+    flex-grow:1;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
