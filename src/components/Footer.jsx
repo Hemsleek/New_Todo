@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({ todos }) => {
+const Footer = ({ todos = [] }) => {
   const todosLeft = todos.filter((todo) => todo.isChecked === false);
   const tabs = "All,Active,Completed".split(",");
   return (

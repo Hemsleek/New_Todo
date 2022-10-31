@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { defaultTodos } from "../data";
 import Footer from "./Footer";
 import "./TodoApp.css";
@@ -32,6 +33,7 @@ const TodoApp = () => {
         <Footer todos={todos} />
       </div>
       <span className="cancel-msg">Press 'Esc' to Cancel</span>
+      <Link to="/products">Go to products</Link>
     </>
   );
 };
