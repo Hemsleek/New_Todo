@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import TodoApp from "./components/TodoApp";
 import Invoices from "./components/Invoices";
+import InvoiceDetail from "./components/InvoiceDetail";
 
 import "./App.css";
 
@@ -20,11 +21,14 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/invoices" element={<Invoices />} />
+        <Route path="/invoices">
+          <Route index={true} element={<Invoices />} />
+          <Route path="invoice/:invoiceName" element={<InvoiceDetail />} />
+        </Route>
         <Route path="home" element={<TodoApp />} />
         <Route path="products" element={<Products />} />
         <Route path="dummy" element={<Dummy />} />
-        <Route path=":bde" element={<ABC />} />x
+        <Route path=":bde" element={<ABC />} />
         <Route path="/dashboard">
           <Route index={true} element={<Dashboard />} />
           <Route path="wear" element={<DashboardWear />} />

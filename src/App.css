@@ -12,7 +12,11 @@
   margin:3vh auto 1rem;
 
 }
-.Invoices .invoice{
+.Invoices .link{
+  text-decoration: none;
+  color:#000;
+}
+ .invoice{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,5 +26,10 @@
   padding:.5rem 1rem;
   font-size: x-small;
 }
+.small{
+  width:20vw;
+  margin:2rem auto;
+}
+
 
 
